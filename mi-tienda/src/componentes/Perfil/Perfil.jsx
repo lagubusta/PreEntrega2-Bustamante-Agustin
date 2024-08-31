@@ -1,13 +1,19 @@
-import './Estilo Perfil.css';
 import { useState } from 'react';
+import './Estilo Perfil.css';
 
-function Perfil(propiedades) {
 
-    let { titulo, arroba, img } = propiedades;
+function Perfil( { titulo, arroba, img } ) {
 
-    function handelClick() {
-        console.log("click");
+    const [count, setCount] = useState(0);
+
+    function handelClickSuma(suma) {
+        setCount(count + 1);
     }
+    function handelClickResta(resta) {
+        setCount(count - 1);
+    }
+
+    
 
     return (
         <>
@@ -17,9 +23,14 @@ function Perfil(propiedades) {
                     <h3> {titulo} </h3>
                     <p> {arroba} </p>
                 </article>
-                <button onClick={handelClick}>Cargar</button>
+                <div>
+                <button onClick={handelClickSuma}>+</button>
+                <span> {count} </span>
+                <button onClick={handelClickResta}>-</button>
+                </div>
             </div>
         </>
+        
     )
 }
 
