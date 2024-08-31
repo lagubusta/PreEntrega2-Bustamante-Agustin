@@ -1,6 +1,6 @@
 # Segunda pre-entrega de tu Proyecto final
 
-Formato: Link a último commit de git donde se cumplan los objetivos + GIF mostrando la navegabilidad. Debe tener el nombre **“PreEntrega2+Apellido”**. 
+**Formato:** Link a último commit de git donde se cumplan los objetivos + GIF mostrando la navegabilidad. Debe tener el nombre **“PreEntrega2+Apellido”**. 
 
 ## Consigna.
 
