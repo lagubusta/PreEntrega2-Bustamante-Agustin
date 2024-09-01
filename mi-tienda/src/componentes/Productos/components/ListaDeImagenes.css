@@ -1,0 +1,14 @@
+
+
+
+
+.imgae-list{
+    columns: 6 300px;
+    column-gap: 5px;
+}
+
+.detalle-img{
+    width: 50%;
+    margin-bottom: 10px;
+
+}

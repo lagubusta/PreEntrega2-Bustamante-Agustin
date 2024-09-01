@@ -1,27 +1,36 @@
 // import { useState, useEffect } from 'react';
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+//Componentes////////////////////////////////////////////////
 import Perfil from "./componentes/Perfil/Perfil";
-import Marte from "./img/Marte.jpg"
-import Montañas from "./img/Montañas.jpg";
-import Nubes from "./img/Nubes.jpg";
 import Carrito from "./componentes/Carrito/Carrito";
-// import searchImagenes from './componentes/api';
 import Productos from './componentes/Productos/Productos';
+import NavBar from "./componentes/NavBar/NavBar";
+//Componentes////////////////////////////////////////////////
+//Paginas////////////////////////////////////////////////
+import CarritoPag from "./pages/CarritoPag";
+import ErrorPag from "./pages/ErrorPag";
+import HomePag from "./pages/HomePag";
+import PerfilPag from "./pages/PerfilPag";
+import ProductosPag from './pages/ProductosPag';
+import Layout from "./pages/Layout";
 
+//Paginas////////////////////////////////////////////////
 export default function App() {
-    // const handleSubmit = (termino) => {
-    //     console.log("bucsamos", termino);
-    // }
     return (
         <div>
-            <Productos></Productos>
-            <Carrito></Carrito>
-            <h1> Asistentes</h1>
-            <Perfil titulo="Marte" arroba="@Marte" img={Marte} />
-            <Perfil titulo="Montañas" arroba="@Montañas" img={Montañas} />
-            <Perfil titulo="Nubes" arroba="@Nubes" img={Nubes} />
-        </div>
+            <BrowserRouter>
 
+                <Routes>
+                    <Route path="/home" element={<Layout/>}>
+                        <Route index element={<HomePag />} />
+                        <Route path="carrito" element={<CarritoPag />} />
+                        <Route path="productos" element={<ProductosPag />} />
+                        <Route path="perfil" element={<PerfilPag />} />
+                        <Route path="*" element={<ErrorPag />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+
+        </div>
     )
 }

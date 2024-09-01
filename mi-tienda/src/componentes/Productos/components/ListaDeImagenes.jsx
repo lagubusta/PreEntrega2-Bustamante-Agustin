@@ -1,14 +1,15 @@
 import MostrarImg from "./MostrarImg";
+import "./ListaDeImagenes.css";
 
 function ListaDeImagenes ({images}){
 
     const renderImages = images.map((image)=>{
-        return <MostrarImg key={image.key}  image = {image}/>
+        return <MostrarImg key={image.key}  image = {image} />
     })
 
 return(
     <>
-    <h1> {renderImages} </h1>
+    <div className="imgae-list"> {renderImages} </div>
     </>
 )
 }
