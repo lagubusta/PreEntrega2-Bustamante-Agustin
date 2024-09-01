@@ -3,12 +3,16 @@
 
 
 .imgae-list{
+    margin: auto;
+    border: solid red 4px;
+    width: 80%;
     columns: 6 300px;
     column-gap: 5px;
+    
 }
 
 .detalle-img{
-    width: 50%;
-    margin-bottom: 10px;
-
+    width: 90%;
+    margin: 3px auto;
+    background-color: wheat;
 }

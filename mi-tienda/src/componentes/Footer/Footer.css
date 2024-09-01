@@ -1,0 +1,21 @@
+li{
+    list-style: none;
+    
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: rgb(9, 0, 41);
+    display: flex;
+    color: rgb(233, 113, 0);
+}
+
+.divFooter{
+    width: 50%;
+    padding: 1rem;
+    justify-content: right;
+}
+
+.divFooter h3{  
+    color: wheat;
+}

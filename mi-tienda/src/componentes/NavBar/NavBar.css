@@ -1,0 +1,27 @@
+*{
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgb(9, 0, 41);
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 0 50px;    
+}
+
+.listaNavInicio{
+
+    color:wheat;
+    align-items: center;
+}
+
+
+.listaNav{
+    color: rgb(233, 113, 0);
+    align-items: center;
+}

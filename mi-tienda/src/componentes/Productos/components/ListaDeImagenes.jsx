@@ -4,7 +4,7 @@ import "./ListaDeImagenes.css";
 function ListaDeImagenes ({images}){
 
     const renderImages = images.map((image)=>{
-        return <MostrarImg key={image.key}  image = {image} />
+        return <MostrarImg key={image.key}  image = {image}/>
     })
 
 return(

@@ -1,5 +1,5 @@
-// import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
 //Componentes////////////////////////////////////////////////
 import Perfil from "./componentes/Perfil/Perfil";
 import Carrito from "./componentes/Carrito/Carrito";
@@ -19,7 +19,6 @@ export default function App() {
     return (
         <div>
             <BrowserRouter>
-
                 <Routes>
                     <Route path="/home" element={<Layout/>}>
                         <Route index element={<HomePag />} />
@@ -30,7 +29,6 @@ export default function App() {
                     </Route>
                 </Routes>
             </BrowserRouter>
-
         </div>
     )
 }
