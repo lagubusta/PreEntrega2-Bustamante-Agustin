@@ -18,7 +18,7 @@ function SearchBar({ enSubmit }) {
     return (
         <>
             <form onSubmit={handelForSubmit}>
-                <input value={term} type="text" onChange={handleChange} />
+                <input value={term} type="text" onChange={handleChange} placeholder='Ingresa la palabra a buscar.'/>
             </form>
         </>
     );

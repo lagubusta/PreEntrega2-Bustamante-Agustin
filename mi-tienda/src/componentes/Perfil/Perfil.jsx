@@ -19,7 +19,7 @@ function Perfil( { titulo, arroba, img } ) {
         <>
             <div className="contenedorPerfil">
                 <article>
-                    <img src={img} alt="" />
+                    <img src="../img/Marte" alt="" />
                     <h3> {titulo} </h3>
                     <p> {arroba} </p>
                 </article>

@@ -22,9 +22,9 @@ export default function App() {
                 <Routes>
                     <Route path="/home" element={<Layout/>}>
                         <Route index element={<HomePag />} />
-                        <Route path="carrito" element={<CarritoPag />} />
                         <Route path="productos" element={<ProductosPag />} />
                         <Route path="perfil" element={<PerfilPag />} />
+                        <Route path="carrito" element={<CarritoPag />} />
                         <Route path="*" element={<ErrorPag />} />
                     </Route>
                 </Routes>

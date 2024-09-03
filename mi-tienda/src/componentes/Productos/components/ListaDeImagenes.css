@@ -1,13 +1,11 @@
 
-
-
-
 .imgae-list{
-    margin: auto;
-    border: solid red 4px;
+    margin: 25px auto;
+    background-color: rgba(233, 113, 0, 0.13);
     width: 80%;
-    columns: 6 300px;
-    column-gap: 5px;
+    columns: 4 300px;
+    column-gap: 3px;
+    padding: 1rem;
     
 }
 
@@ -15,4 +13,21 @@
     width: 90%;
     margin: 3px auto;
     background-color: wheat;
+}
+
+.Cards{
+    overflow: hidden;
+    max-height: fit-content;
+    background-color: rgb(233, 113, 0);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color:wheat;
+}
+
+.Cards button {
+    width: 30%;
+    background-color: rgb(9, 0, 41);
+    border-radius: 10px;
 }
